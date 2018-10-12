@@ -1,0 +1,13 @@
+.btn {
+  border: none;
+  min-height: 40px;
+  background: transparent;
+  color: $dark;
+  padding-left: $gutter-md;
+  padding-right: $gutter-md;
+  font-size: 1rem;
+  outline: 0;
+  position: relative;
+  cursor: pointer;
+  transition: all .25s ease-in-out;
+}

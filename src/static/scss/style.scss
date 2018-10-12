@@ -1,0 +1,12 @@
+@import "colors";
+@import "config";
+@import "variables";
+@import "components";
+@import "mixins/breakpoints";
+.menu
+{
+  display: inline-block;
+  float: left;
+  font-size: 50px;
+  color: red;
+}

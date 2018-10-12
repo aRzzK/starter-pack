@@ -1,0 +1,131 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+    meta(name="description" content="")
+    meta(name="keywords" content="")
+    title Uspeshniy Site
+    link(rel='stylesheet' href='../src/static/scss/rzzkStyle.css')
+  body
+    .container
+      .header
+          h1.logo.bold logo
+          ul.headerMenu
+            li
+                a(href="#") Практики
+            li
+                a(href="#") Новини
+            li
+                a(href="#") Публікації
+            li
+                a(href="#") Кар'єра
+            li
+                a(href="#") Команда
+            li
+                a(href="#") Контакти
+          a(href="#").askButton.bold
+              | Задати питання
+          img.translate(src="../src/static/img/translate.svg")
+          button.arrowButton(onclick="")
+            img.arrowImg(src="../src/static/img/arrow.svg")
+      .firstPart
+        .firstBG(id = "firstBG")
+        .firstCont
+          h2.firstTitle.bold Перша практика опис
+          p.firstText Cлоган, або короткий опис даної практики, створений для того, щоб<br> зацікавити клієнта отримати якомога більше інформації
+          button.practicButton(onclick="changeBG('0')") Практика1
+          button.practicButton(onclick="changeBG('1')") Практика2
+          button.practicButton(onclick="changeBG('2')") Практика3
+      .secondPart
+        h1.secondMainTitle.bold Про нашу фірму
+        p.secondText Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut <br>labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco <br>laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit <br>in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br>Excepteur sint occaecat cupidatat non proident, sunt in culpa <br>qui officia deserunt mollit anim id est laborum.
+        h2.secondTitle.bold Наша основна ціль
+        p.secondText Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut <br>labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco <br>laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit <br>in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br>Excepteur sint occaecat cupidatat non proident, sunt in culpa <br>qui officia deserunt mollit anim id est laborum.
+        h2.secondTitle.bold Місія і цінності
+        p.secondText Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut <br>labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco <br>laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit <br>in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br>Excepteur sint occaecat cupidatat non proident, sunt in culpa <br>qui officia deserunt mollit anim id est laborum.
+      .secondPartBenefits
+        .circle
+        h3.DirectorName Ім'я Прізвище
+        p.secondText.rightText Управляючий партнер<br>юридична фірма "Назва фірми"
+        .underline
+        h3.DirectorName Наші досягнення
+        img.minilogo(src="static/img/smile.svg")
+        p.secondText.rightText 0 - задоволених клієнтів
+        img.minilogo(src="static/img/done.svg")
+        p.secondText.rightText 0 - закритих договорів
+        img.minilogo(src="static/img/mail.svg")
+        p.secondText.rightText 0 - поданих позовів і заяв
+      .thirdPart
+        h1.secondMainTitle.bold.thirdTitle Нам довіряють
+        img.arrow.leftarrow(src="static/img/arrowLeft.svg" onclick="slideback()")
+        img.arrow(src="static/img/arrowRight.svg" onclick="slideforward()")
+        .slider
+          .sliderwindow(id = "sliderw")
+              .slide
+                  img(src="../src/static/img/mono.png")
+              .slide
+                  img(src="static/img/mono.png")
+              .slide
+                  img(src="static/img/mono.png")
+              .slide
+                  img(src="static/img/mono.png")
+              .slide
+                  img(src="static/img/mono.png")
+              .slide
+                  img(src="static/img/mono.png")
+              .slide
+                  img(src="static/img/pepe.jpg")
+              .slide
+                  img(src="static/img/mono.png")
+      .fourthPart
+        a.more.corner(href="#") <br>Більше...<br>
+        h1.secondMainTitle.bold Новини
+        .newsBlock
+          h2.fourthTitle Lorem Ipsum dolor sit amet
+          p.more 8 жовтня 2018
+          p.secondText.rightText Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed<br>do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>Ut enim ad minim veniam, quis nostrud exercitation ullamco <br>laboris nisi ut aliquip ex ea commodo consequat. <br>Duis aute irure dolor in reprehenderit <br>in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br>Excepteur sint occaecat cupidatat non proident, sunt in culpa <br>qui officia deserunt mollit anim id est laborum.
+          a.more(href="#") <br>Дізнатися більше...<br>
+        .newsBlock
+          h2.fourthTitle Lorem Ipsum dolor sit amet
+          p.more 8 жовтня 2018
+          p.secondText.rightText Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed<br>do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>Ut enim ad minim veniam, quis nostrud exercitation ullamco <br>laboris nisi ut aliquip ex ea commodo consequat. <br>Duis aute irure dolor in reprehenderit <br>in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br>Excepteur sint occaecat cupidatat non proident, sunt in culpa <br>qui officia deserunt mollit anim id est laborum.
+          a.more(href="#") <br>Дізнатися більше...<br>
+        .newsBlock
+          h2.fourthTitle Lorem Gut go na podrubku
+          p.more 8 жовтня 2018
+          p.secondText.rightText Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed<br>do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>Ut enim ad minim veniam, quis nostrud exercitation ullamco <br>laboris nisi ut aliquip ex ea commodo consequat. <br>Duis aute irure dolor in reprehenderit <br>in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br>Excepteur sint occaecat cupidatat non proident, sunt in culpa <br>qui officia deserunt mollit anim id est laborum.
+          a.more(href="#") <br>Дізнатися більше...<br>
+        .newsBlock
+          h2.fourthTitle Lorem Ipsum dolor sit amet
+          p.more 8 жовтня 2018
+          p.secondText.rightText Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed<br>do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>Ut enim ad minim veniam, quis nostrud exercitation ullamco <br>laboris nisi ut aliquip ex ea commodo consequat. <br>Duis aute irure dolor in reprehenderit <br>in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br>Excepteur sint occaecat cupidatat non proident, sunt in culpa <br>qui officia deserunt mollit anim id est laborum.
+          a.more(href="#") <br>Дізнатися більше...<br>
+        .splitter
+      .fourthPartRight
+          a.more.rightCorner(href="#") <br>Більше...<br>
+          .newsBlock
+              h2.fourthTitle Lorem Ipsum dolor sit amet
+              p.more 8 жовтня 2018
+              p.secondText.rightText Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed<br>do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>Ut enim ad minim veniam, quis nostrud exercitation<br>laboris nisi ut aliquip ex ea commodo consequat. <br>Duis aute irure dolor in reprehenderit <br>in voluptate velit esse cillum dolore.
+              a.more(href="#") <br>Дізнатися більше...<br>
+          .newsBlock
+              h2.fourthTitle Lorem Ipsum dolor sit amet
+              p.more 8 жовтня 2018
+              p.secondText.rightText Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed<br>do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>Ut enim ad minim veniam, quis nostrud exercitation<br>laboris nisi ut aliquip ex ea commodo consequat. <br>Duis aute irure dolor in reprehenderit <br>in voluptate velit esse cillum dolore.
+              a.more(href="#") <br>Дізнатися більше...<br>
+      .fifthPart
+          h1.fifthTitle1 Потрібна допомога?
+          h1.fifthTitle2 Оформіть заявку прямо зараз!
+          input.TextBox(type="textbox" placeholder="Ім'я")
+          input.TextBox(type="textbox" placeholder="Електронна адреса")
+          <br>
+          input.TextBox.phone(type="textbox" placeholder="Телефон")
+          <br>
+          textarea.TextBox.Message(type="text" placeholder="Повідомлення")
+          button.confirm Оформити заявку
+          .vertSplitter
+          p.more &#169; 2018 Юридична фірма "Назва Фірми".
+      script(src='static/js/libs.min.js')
+    script(src='../src/static/js/rzzkScript.js')
+    script(src='static/js/main.js')
